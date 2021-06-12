@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41644" started-at="2021-06-11T20:26:39 PDT" finished-at="2021-06-11T20:27:21 PDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@34c4973]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="41644" started-at="2021-06-11T20:26:39 PDT" finished-at="2021-06-11T20:27:21 PDT">
+      <class name="runner.MyRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.MyRunner@34c4973]" name="setUpClass" is-config="true" duration-ms="755" started-at="2021-06-11T20:26:39 PDT" finished-at="2021-06-11T20:26:40 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@34c4973]" name="runScenario" duration-ms="13520" started-at="2021-06-11T20:26:40 PDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-11T20:26:54 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Round Trip Flight Search"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Round Trip Flight Search]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.MyRunner@34c4973]" name="runScenario" duration-ms="27198" started-at="2021-06-11T20:26:54 PDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-06-11T20:27:21 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Non Registered User Verify"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Registration]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at managers.WebDriverManager.logFailure(WebDriverManager.java:134)
+at managers.WebDriverManager.findElement(WebDriverManager.java:95)
+at managers.WebDriverManager.click(WebDriverManager.java:108)
+at pages.HomePage.userSignUp(HomePage.java:31)
+at steps.UserRegistration.click_signUp(UserRegistration.java:38)
+at ✽.I click on sign up link(file:///C:/eclipse-workspace/Test/src/test/resources/User.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.MyRunner@34c4973]" name="tearDownClass" is-config="true" duration-ms="111" started-at="2021-06-11T20:27:21 PDT" finished-at="2021-06-11T20:27:21 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.MyRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
